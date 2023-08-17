@@ -1,0 +1,56 @@
+.form__fieldset {
+    border-radius: 10px;
+    border: 5px solid #8ca4ab;
+    padding: 10px;
+}
+
+.form__currency {
+    background-color: #4d5c5b;
+    border-radius: 5px;
+    color: whitesmoke;
+
+}
+
+.form__money {
+    background-color: #4d5c5b;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+.form__data {
+    background-color: #4d5c5b;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+.form__button {
+    width: 40%;
+    border: none;
+    background-color: #1e5f77;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form__button:hover {
+    background-color: #36545e;
+}
+
+.form__button:active {
+    background-color: #1d302f;
+}
+
+.form__lableText {
+    max-width: 150px;
+    width: 100%;
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.form__result {
+    background-color: #4d5c5b;
+    border-radius: 5px;
+    color: whitesmoke;
+}
