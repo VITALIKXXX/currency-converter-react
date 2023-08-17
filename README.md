@@ -1,3 +1,20 @@
+# Currency converter
+
+## DEMO 
+ https://vitalikxxx.github.io/currency-converter-react/
+
+ ## Technologies used:
+- HTML
+- CSS
+- JavaScript
+- BEM
+- React
+
+## This is my currency-converter with interactions 
+
+![Animation](https://github.com/VITALIKXXX/currency-converter-react/blob/main/public/images/Animation%20%20.gif?raw=true)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
