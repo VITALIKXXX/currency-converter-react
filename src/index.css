@@ -10,4 +10,7 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
+  background-image: url("flaga\ uk.avif");
+  background-size: cover;
+  background-position: center;
 }
