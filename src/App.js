@@ -6,7 +6,7 @@ import './index.css';
 import { currencies } from './currencies';
 function App() {
 
-  const [result, setResult] = useState();
+  const [result, setResult] = useState(null);
 
   const calculateResult = (currency, amount) => {
     const rate = currencies
