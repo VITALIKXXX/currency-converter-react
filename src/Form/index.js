@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { currencies } from "../currencies";
 import { Result } from "./Result";
 import "./style.css";
+import Clock from '../Clock'
 
 export const Form = ({ calculateResult, result }) => {
     const [currency, setCurrency] = useState(currencies[0].short);
@@ -54,6 +55,8 @@ export const Form = ({ calculateResult, result }) => {
                 </p>
 
                 <Result result={result} />
+                <Clock
+      />
             </fieldset>
         </form >
     );
