@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/currency-converter-react/static/css/main.fbba0db5.css",
-    "main.js": "/currency-converter-react/static/js/main.ab87944b.js",
+    "main.css": "/currency-converter-react/static/css/main.6d8c29fc.css",
+    "main.js": "/currency-converter-react/static/js/main.4d8991f3.js",
     "static/js/787.2dbbe128.chunk.js": "/currency-converter-react/static/js/787.2dbbe128.chunk.js",
-    "static/media/flaga uk.avif": "/currency-converter-react/static/media/flaga uk.5d5ff82543d39ffcd14b.avif",
+    "static/media/kantor-wymiany-walut-pomysl-na-biznes.webp": "/currency-converter-react/static/media/kantor-wymiany-walut-pomysl-na-biznes.09e45f4ef5c563210a5f.webp",
     "index.html": "/currency-converter-react/index.html",
-    "main.fbba0db5.css.map": "/currency-converter-react/static/css/main.fbba0db5.css.map",
-    "main.ab87944b.js.map": "/currency-converter-react/static/js/main.ab87944b.js.map",
+    "main.6d8c29fc.css.map": "/currency-converter-react/static/css/main.6d8c29fc.css.map",
+    "main.4d8991f3.js.map": "/currency-converter-react/static/js/main.4d8991f3.js.map",
     "787.2dbbe128.chunk.js.map": "/currency-converter-react/static/js/787.2dbbe128.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbba0db5.css",
-    "static/js/main.ab87944b.js"
+    "static/css/main.6d8c29fc.css",
+    "static/js/main.4d8991f3.js"
   ]
 }
