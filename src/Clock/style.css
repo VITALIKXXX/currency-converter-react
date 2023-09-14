@@ -1,8 +1,10 @@
 .clock {
-  position: relative;
-  top: -227px;
-  right: 10px;
+  position: fixed;
+  top: 118px;
+  right: 300px;
   font-size: 16px;
   text-align: right;
-  color: #000;
+  color: #333;
+  padding: 10px;
+
 }
