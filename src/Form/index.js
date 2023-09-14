@@ -56,7 +56,7 @@ export const Form = ({ calculateResult, result }) => {
 
                 <Result result={result} />
                 <Clock
-      />
+                />
             </fieldset>
         </form >
     );
