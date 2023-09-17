@@ -1,6 +1,16 @@
 import './style.css';
 import { useState, useEffect } from "react";
 
+const options = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric'
+};
+
 const Clock = () => {
     const [currentDateTime, setCurrentDateTime] = useState(new Date());
 
@@ -13,16 +23,6 @@ const Clock = () => {
             clearInterval(timer);
         };
     }, []);
-
-    const options = {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        hour: 'numeric',
-        minute: 'numeric',
-        second: 'numeric'
-    };
 
     const formattedDate = currentDateTime.toLocaleDateString('pl-PL', options);
 
