@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { currencies } from "../currencies";
 import { Result } from "./Result";
-import "./style.css";
 import Clock from '../Clock'
+import { Fieldset, Span, Input, StyledButton } from './styled';
 
 export const Form = ({ calculateResult, result }) => {
     const [currency, setCurrency] = useState(currencies[0].short);
@@ -14,15 +14,14 @@ export const Form = ({ calculateResult, result }) => {
     }
 
     return (
-        <form className="form" onSubmit={onSubmit}>
-            <fieldset className="form__fieldset">
+        <form onSubmit={onSubmit}>
+            <Fieldset>
                 <p>
                     <label>
-                        <span className="form__lableText"> Kwota </span>
-                        <input
+                        <Span> Kwota </Span>
+                        <Input
                             value={amount}
                             onChange={({ target }) => setAmount(target.value)}
-                            className="form__money"
                             required
                             type="number"
                             min="0.01"
@@ -32,9 +31,8 @@ export const Form = ({ calculateResult, result }) => {
                 </p>
                 <p>
                     <label>
-                        <span className="form__lableText"> Waluta:</span>
-                        <select
-                            className="form__currency"
+                        <Span> Waluta:</Span>
+                        <Input as="select"
                             value={currency}
                             onChange={({ target }) => setCurrency(target.value)}
                         >
@@ -46,18 +44,18 @@ export const Form = ({ calculateResult, result }) => {
                             </option>
                             )))}
 
-                        </select>
+                        </Input>
                     </label>
                 </p>
 
                 <p>
-                    <button className="form__button">Oblicz</button>
+                    <StyledButton>Oblicz</StyledButton>
                 </p>
 
                 <Result result={result} />
                 <Clock
                 />
-            </fieldset>
+            </Fieldset>
         </form >
     );
 };

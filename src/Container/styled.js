@@ -1,4 +1,6 @@
-.container {
+import styled from "styled-components";
+
+export const StyledContainer = styled.div`
     max-width: 1000px;
     text-align: center;
     font-family: "Lato", sans-serif;
@@ -7,4 +9,4 @@
     margin: auto;
     overflow-x: auto;
     resize: both;
-}
+`;

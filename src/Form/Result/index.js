@@ -1,5 +1,5 @@
 export const Result = ({ result }) => (
-    <p className="result">
+    <p>
         {result && (
             <>
                 {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;= {" "}
