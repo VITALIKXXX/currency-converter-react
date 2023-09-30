@@ -7,6 +7,6 @@ export const StyledClock = styled.div`
     font-size: 16px;
     text-align: right;
     color: #333;
-    padding: 10px;
+    padding: 26px;
     font-family: monospace;
 `;
