@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Form from "./Form";
 import Container from "./Container";
 import Header from "./Header";
-import './index.css';
 import { currencies } from './currencies';
 
 function App() {
