@@ -15,8 +15,6 @@ const formatDate = ({ date }) => date.toLocaleDateString(undefined, {
 const Clock = () => {
     const date = useCurrentDate();
 
-
-
     return (
         <StyledClock>
             Dziś jest {formatDate(date)}

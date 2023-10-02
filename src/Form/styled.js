@@ -13,20 +13,20 @@ export const Span = styled.span`
     display: inline-block;
     margin-right: 5px;
     font-weight: bold;
-    color: #000000;
+    color: ${({theme}) => theme.colors.black};
 `;
 
 export const Input = styled.input`
     background-color: #4d5c5b;
     border-radius: 5px;
-    color: whitesmoke;
+    color: ${({theme}) => theme.colors.whiteSmoke};
 `;
 
 export const StyledButton = styled.button`
     width: 40%;
     border: none;
     background-color: #1e5f77;
-    color: white;
+    color: ${({theme}) => theme.colors.white};
     padding: 10px;
     border-radius: 5px;
 

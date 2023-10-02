@@ -6,7 +6,7 @@ export const StyledClock = styled.div`
     right: 300px;
     font-size: 16px;
     text-align: right;
-    color: #333;
+    color: ${({ theme }) => theme.colors.nightRider};
     padding: 26px;
     font-family: monospace;
 `;

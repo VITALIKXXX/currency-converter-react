@@ -19,3 +19,13 @@ body {
   background-position: center;
 }
 `;
+
+export const theme = {
+  colors: {
+    nightRider: "#333",
+    black: "#000000",
+    whiteSmoke: "#f5f5f5",
+    white: "#ffffff",
+    oxfordBlue: "#293b3b",
+  },
+};

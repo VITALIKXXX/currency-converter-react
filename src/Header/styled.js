@@ -5,5 +5,5 @@ export const StyledHeader = styled.header`
     border-radius: 10px;
     box-shadow: inset  -16px 8px 55px -30px #00086E;
     text-shadow: 1px 1px 1px #000000;
-    color: #293b3b;
+    color: ${({theme}) => theme.colors.oxfordBlue};
 `;

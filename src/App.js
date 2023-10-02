@@ -3,6 +3,8 @@ import Form from "./Form";
 import Container from "./Container";
 import Header from "./Header";
 import { currencies } from './currencies';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './styled';
 
 function App() {
 
@@ -21,13 +23,15 @@ function App() {
   }
 
   return (
-    <Container>
-      <Header title="Currency converter" />
-      <Form
-        result={result}
-        calculateResult={calculateResult}
-      />
-    </Container>
+    <ThemeProvider theme={theme}>
+      <Container>
+        <Header title="Currency converter" />
+        <Form
+          result={result}
+          calculateResult={calculateResult}
+        />
+      </Container>
+    </ThemeProvider>
   );
 }
 
