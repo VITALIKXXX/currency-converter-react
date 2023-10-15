@@ -27,5 +27,7 @@ export const theme = {
     whiteSmoke: "#f5f5f5",
     white: "#ffffff",
     oxfordBlue: "#293b3b",
+    teal: "#008080",
+    red: "#ff0000",
   },
 };

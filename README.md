@@ -9,6 +9,7 @@
 - JavaScript
 - BEM
 - React
+- StyledComponent
 
 ## This is my currency-converter with interactions 
 

@@ -13,20 +13,20 @@ export const Span = styled.span`
     display: inline-block;
     margin-right: 5px;
     font-weight: bold;
-    color: ${({theme}) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.black};
 `;
 
 export const Input = styled.input`
     background-color: #4d5c5b;
     border-radius: 5px;
-    color: ${({theme}) => theme.colors.whiteSmoke};
+    color: ${({ theme }) => theme.colors.whiteSmoke};
 `;
 
 export const StyledButton = styled.button`
     width: 40%;
     border: none;
     background-color: #1e5f77;
-    color: ${({theme}) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.white};
     padding: 10px;
     border-radius: 5px;
 
@@ -37,4 +37,12 @@ export const StyledButton = styled.button`
     &:active {
         background-color: #1d302f;
     }
+`;
+
+export const Loading = styled.p`
+color: ${({ theme }) => theme.colors.teal}; 
+`;
+
+export const Fail = styled.p`
+color: ${({ theme }) => theme.colors.red}; 
 `;

@@ -6,6 +6,7 @@ export const Result = ({ result }) => (
 
                 <strong>
                     {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
+                    {result.formCurrency}
                 </strong>
             </>
         )}
