@@ -16,7 +16,7 @@
 
 ## This is my currency-converter with interactions 
 
-![Animation](https://github.com/VITALIKXXX/currency-converter-react/blob/main/public/images/Animation%20%20.gif?raw=true)
+![Animation](https://github.com/VITALIKXXX/currency-converter-react/blob/main/public/images/Animation%20%20NEW.gif?raw=true)
 
 
 # Getting Started with Create React App
