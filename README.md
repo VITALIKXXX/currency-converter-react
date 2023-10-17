@@ -10,6 +10,9 @@
 - BEM
 - React
 - StyledComponent
+- REACT HOOKS AND CUSTOM HOOKS
+- PROMISES ASYNC/AWAIT
+- API
 
 ## This is my currency-converter with interactions 
 
