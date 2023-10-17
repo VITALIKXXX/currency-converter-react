@@ -6,20 +6,23 @@ import { Result } from './Result';
 
 export const Form = () => {
 
-    const [currency, setCurrency] = useState();
-    const [result, setResult] = useState(null);
-    const [amount, setAmount] = useState("");
     const currencyData = useCurrencyData();
 
-    const calculateCurrency = (currency, amount) => {
-        const value = currencyData.data[currency];
+    const [currency, setCurrency] = useState("EUR");
+    const [result, setResult] = useState(null);
+    const [amount, setAmount] = useState("");
+    
 
-       setResult({
-            sourceAmount: +amount,
-            targetAmount: amount * value,
-            formCurrency: currency,
-        });
-    }
+    const calculateCurrency = (currency, amount) => {
+            const rate = currencyData.data[currency].value;
+
+            setResult({
+                sourceAmount: +amount,
+                targetAmount: amount * rate,
+                currency,
+            });
+        }
+    
 
     const onSubmit = (event) => {
         event.preventDefault();
@@ -31,13 +34,13 @@ export const Form = () => {
             {currencyData.state === "Loading"
                 ? (
                     <Loading>
-                        <br />Laduje kurs walut<br />
+                        <br />Ładuję aktualne kursy  walut...
                     </Loading>
                 )
                 : (
                     currencyData.state === "error" ? (
                         <Fail>
-                            Cos poszlo nie tak, czy masz polaczenia z internetem
+                           Hmm...  Cos poszlo nie tak, Wystąpił jakiś błąd 😞, Sprawdź czy masz polaczenia z internetem, Jeśli tak to sprobuj póżniej...
                         </Fail>
                     ) : (
                         <Fieldset>
@@ -51,7 +54,7 @@ export const Form = () => {
                                         type="number"
                                         min="0.01"
                                         step="any"
-                                        placeholder="Polski zloty" />
+                                        placeholder="PLN" />
                                 </label>
                             </p>
                             <p>
@@ -86,7 +89,7 @@ export const Form = () => {
                 )};
 
         </form >
-    ); 
+    );
 };
 
 

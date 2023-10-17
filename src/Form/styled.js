@@ -40,9 +40,12 @@ export const StyledButton = styled.button`
 `;
 
 export const Loading = styled.p`
-color: ${({ theme }) => theme.colors.teal}; 
+color: ${({ theme }) => theme.colors.white}; 
+background-color: teal;
+padding: 10px;
 `;
 
 export const Fail = styled.p`
-color: ${({ theme }) => theme.colors.red}; 
+color: ${({ theme }) => theme.colors.red};
+background-color :whitesmoke ;
 `;

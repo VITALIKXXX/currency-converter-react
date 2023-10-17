@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const URL = "https://api.currencyapi.com/v3/latest?apikey=cur_live_RIGWdE5SPbfCkOJ5vjwGpk8stQaPMn10c0Q6lh2J";
+const URL = "https://api.currencyapi.com/v3/latest?apikey=cur_live_RIGWdE5SPbfCkOJ5vjwGpk8stQaPMn10c0Q6lh2J&base_currency=PLN";
 
 
 export const useCurrencyData = () => {  
@@ -32,7 +32,7 @@ export const useCurrencyData = () => {
             }
         };
 
-        setTimeout(fetchData, 1000);
+        setTimeout(fetchData, 3000);
     }, []);
 
     return currencyData;
