@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react';
 
 const URL = "https://api.currencyapi.com/v3/latest?apikey=cur_live_RIGWdE5SPbfCkOJ5vjwGpk8stQaPMn10c0Q6lh2J&base_currency=PLN";
 
-
-export const useCurrencyData = () => {  
+export const useCurrencyData = () => {
     const [currencyData, setCurrencyData] = useState({
         state: "Loading",
     });
@@ -23,6 +22,7 @@ export const useCurrencyData = () => {
                     state: "succes",
                     meta,
                     data,
+                    date: new Date()
                 });
             } catch {
                 setCurrencyData({

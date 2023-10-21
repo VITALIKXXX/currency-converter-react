@@ -11,7 +11,6 @@ const formatDate = ({ date }) => date.toLocaleDateString(undefined, {
     second: 'numeric'
 });
 
-
 const Clock = () => {
     const date = useCurrentDate();
 
@@ -21,7 +20,5 @@ const Clock = () => {
         </StyledClock>
     );
 };
-
-
 
 export default Clock;

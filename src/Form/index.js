@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Clock from '../Clock'
-import { Fieldset, Span, Input, StyledButton, Loading, Fail } from './styled';
+import { Fieldset, Span, Input, StyledButton, Loading, Fail, Date } from './styled';
 import { useCurrencyData } from './useCurrencyData';
 import { Result } from './Result';
 
@@ -11,18 +11,17 @@ export const Form = () => {
     const [currency, setCurrency] = useState("EUR");
     const [result, setResult] = useState(null);
     const [amount, setAmount] = useState("");
-    
 
     const calculateCurrency = (currency, amount) => {
-            const rate = currencyData.data[currency].value;
+        const rate = currencyData.data[currency].value;
 
-            setResult({
-                sourceAmount: +amount,
-                targetAmount: amount * rate,
-                currency,
-            });
-        }
-    
+        setResult({
+            sourceAmount: +amount,
+            targetAmount: amount * rate,
+            currency,
+        });
+    }
+
 
     const onSubmit = (event) => {
         event.preventDefault();
@@ -31,6 +30,7 @@ export const Form = () => {
 
     return (
         <form onSubmit={onSubmit}>
+
             {currencyData.state === "Loading"
                 ? (
                     <Loading>
@@ -40,13 +40,17 @@ export const Form = () => {
                 : (
                     currencyData.state === "error" ? (
                         <Fail>
-                           Hmm...  Cos poszlo nie tak, Wystąpił jakiś błąd 😞, Sprawdź czy masz polaczenia z internetem, Jeśli tak to sprobuj póżniej...
+                            Hmm...  Cos poszlo nie tak, Wystąpił jakiś błąd 😞, Sprawdź czy masz polaczenia z internetem, Jeśli tak to sprobuj póżniej...
                         </Fail>
                     ) : (
                         <Fieldset>
                             <p>
+                                {currencyData.state === "succes" && currencyData.date && (
+                                    <Date>Kurs walut pobierany z currencyapi.com Aktualne na dzien {currencyData.date.toLocaleDateString()}</Date>
+                                )}
                                 <label>
                                     <Span> Kwota </Span>
+
                                     <Input
                                         value={amount}
                                         onChange={({ target }) => setAmount(target.value)}
@@ -80,20 +84,18 @@ export const Form = () => {
                             <p>
                                 <StyledButton>Oblicz</StyledButton>
                             </p>
-
                             <Result result={result} />
                             <Clock
                             />
+
                         </Fieldset>
                     )
                 )};
 
         </form >
+
     );
 };
-
-
-
 
 
 export default Form;

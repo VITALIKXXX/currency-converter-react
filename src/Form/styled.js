@@ -40,12 +40,23 @@ export const StyledButton = styled.button`
 `;
 
 export const Loading = styled.p`
-color: ${({ theme }) => theme.colors.white}; 
-background-color: teal;
-padding: 10px;
+    color: ${({ theme }) => theme.colors.white}; 
+    background-color: teal;
+    padding: 10px;
 `;
 
 export const Fail = styled.p`
-color: ${({ theme }) => theme.colors.red};
-background-color :whitesmoke ;
+    color: ${({ theme }) => theme.colors.red};
+    background-color :whitesmoke ;
+`;
+
+export const Date = styled.p`
+font-family: monospace;
+text-align: center;
+font-size: 16px;
+background: #1e5f77;
+color: white;
+border-radius: 39px;
+border: 0px  solid;
+padding: 5px;
 `;
