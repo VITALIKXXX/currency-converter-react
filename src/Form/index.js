@@ -30,22 +30,25 @@ export const Form = () => {
 
     return (
         <form onSubmit={onSubmit}>
-
-            {currencyData.state === "Loading"
+            {currencyData.status === "loading"
                 ? (
                     <Loading>
                         <br />Ładuję aktualne kursy  walut...
                     </Loading>
                 )
                 : (
-                    currencyData.state === "error" ? (
+                    currencyData.status === "error" ? (
                         <Fail>
                             Hmm...  Cos poszlo nie tak, Wystąpił jakiś błąd 😞, Sprawdź czy masz polaczenia z internetem, Jeśli tak to sprobuj póżniej...
                         </Fail>
                     ) : (
                         <Fieldset>
+                            <header>
+                                <Clock
+                                />
+                            </header>
                             <p>
-                                {currencyData.state === "succes" && currencyData.date && (
+                                {currencyData.status === "succes" && currencyData.date && (
                                     <Date>Kurs walut pobierany z currencyapi.com Aktualne na dzien {currencyData.date.toLocaleDateString()}</Date>
                                 )}
                                 <label>
@@ -85,12 +88,9 @@ export const Form = () => {
                                 <StyledButton>Oblicz</StyledButton>
                             </p>
                             <Result result={result} />
-                            <Clock
-                            />
-
                         </Fieldset>
                     )
-                )};
+                )}
 
         </form >
 

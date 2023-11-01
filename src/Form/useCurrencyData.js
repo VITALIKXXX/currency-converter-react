@@ -4,7 +4,7 @@ const URL = "https://api.currencyapi.com/v3/latest?apikey=cur_live_RIGWdE5SPbfCk
 
 export const useCurrencyData = () => {
     const [currencyData, setCurrencyData] = useState({
-        state: "Loading",
+        status: "loading",
     });
 
     useEffect(() => {
@@ -19,14 +19,14 @@ export const useCurrencyData = () => {
                 const { meta, data } = await response.json();
 
                 setCurrencyData({
-                    state: "succes",
+                    status: "succes",
                     meta,
                     data,
                     date: new Date()
                 });
             } catch {
                 setCurrencyData({
-                    state: "error",
+                    status: "error",
                 });
 
             }
