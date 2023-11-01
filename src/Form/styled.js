@@ -5,6 +5,7 @@ export const Fieldset = styled.fieldset`
     border: 0px solid #8ca4ab;
     padding: 10px;
     background-color: white;
+    height: auto;
 `;
 
 export const Span = styled.span`
