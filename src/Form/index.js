@@ -48,7 +48,7 @@ export const Form = () => {
                                 />
                             </header>
                             <p>
-                                {currencyData.status === "succes" && currencyData.date && (
+                                {currencyData.status === "success" && currencyData.date && (
                                     <Date>Kurs walut pobierany z currencyapi.com Aktualne na dzien {currencyData.date.toLocaleDateString()}</Date>
                                 )}
                                 <label>
